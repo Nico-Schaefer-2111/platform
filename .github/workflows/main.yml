@@ -8,6 +8,7 @@ jobs:
       name: QS
       url: sw6.studio1-test.de
   test-env:
+    runs-on: ubuntu-latest
     environment: Test
     steps:
       - name: print env
