@@ -6,6 +6,6 @@ jobs:
     uses: ./.github/workflows/deployment-test.yml
     environment: Test
     with:
-      name: ${{vars.description}}
-      url: ${{vars.url}}
+      name: ${{vars.DESCRIPTION}}
+      url: ${{vars.URL}}
 
