@@ -1,0 +1,9 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push, workflow_dispatch]
+jobs:
+  deploy:
+    uses: ./.github/workflows/deployment-test.yml
+    runs-on: ubuntu-latest
+    environment: Test
+

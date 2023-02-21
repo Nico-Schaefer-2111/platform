@@ -1,0 +1,17 @@
+name: Studio1 Shopware Deployment
+run-name: ${{ github.actor }} is testing out deployment on ${{ inputs.config-path }} 🚀
+on:
+  workflow_call:
+    inputs:
+      name:
+        required: true
+        type: string
+      url:
+        required: true
+        type: string
+jobs:
+  print-input:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print test
+        run: echo deploy target ${{inputs.name}} at ${{inputs.url}}
