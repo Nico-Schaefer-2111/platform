@@ -5,5 +5,4 @@ jobs:
   deploy:
     uses: ./.github/workflows/deployment-test.yml
     runs-on: ubuntu-latest
-    environment: Test
 
