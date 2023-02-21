@@ -4,5 +4,8 @@ on: [push, workflow_dispatch]
 jobs:
   deploy:
     uses: ./.github/workflows/deployment-test.yml
-    runs-on: ubuntu-latest
+    environment: Test
+    with:
+      name: ${{vars.description}}
+      url: ${{vars.url}}
 
