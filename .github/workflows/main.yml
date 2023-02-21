@@ -4,8 +4,7 @@ on: [push, workflow_dispatch]
 jobs:
   deploy:
     uses: ./.github/workflows/deployment-test.yml
-    environment: Test
     with:
-      name: ${{vars.DESCRIPTION}}
-      url: ${{vars.URL}}
+      name: QS
+      url: sw6.studio1-test.de
 
